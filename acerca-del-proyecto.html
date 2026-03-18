@@ -1,57 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca del Proyecto</title>
+    <title>Acerca del Proyecto - Energía Solar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-
-    <header>
-        <img src="img/sol.svg" alt="sol" width="100" height="100">
-        <h1>Acerca del Proyecto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acerca-del-proyecto.html">Acerca del Proyecto</a></li>
-                <li><a href="datos-energia.html">Datos de Energía</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="calculadora.html">Calculadora</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="img/sol.svg" alt="sol" width="60" height="60">
+                <h1>Acerca del Proyecto</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca-del-proyecto.html" class="active">Acerca del Proyecto</a></li>
+                    <li><a href="datos-energia.html">Datos de Energía</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
-    <main>
-        <h2>Descripción del Proyecto</h2>
-        <p>
-            Este proyecto educativo tiene como objetivo proporcionar información y recursos sobre la energía solar, una fuente de energía limpia y renovable. A través de este sitio web, los usuarios pueden aprender sobre los beneficios de la energía solar, acceder a datos relevantes, utilizar herramientas interactivas como un dashboard y una calculadora para estimar el potencial de energía solar en sus hogares o comunidades.
-        </p>
 
-        <h2>Objetivos</h2>
-        <ul>
-            <li>Educar a los usuarios sobre la importancia de la energía solar.</li>
-            <li>Proporcionar datos actualizados sobre la producción y consumo de energía solar.</li>
-            <li>Ofrecer herramientas interactivas para facilitar la comprensión y aplicación de la energía solar.</li>
-            <li>Fomentar el uso de energías limpias para contribuir a un futuro sostenible.</li>
-        </ul>
+    <main class="page-content">
+        <section class="content-section">
+            <div class="container content-container">
+                <h2>Descripción del Proyecto</h2>
+                <p>
+                    Este proyecto educativo tiene como objetivo proporcionar información y recursos sobre la energía solar, una fuente de energía limpia y renovable. A través de este sitio web, los usuarios pueden aprender sobre los beneficios de la energía solar, acceder a datos relevantes, utilizar herramientas interactivas como un dashboard y una calculadora para estimar el potencial de energía solar en sus hogares o comunidades.
+                </p>
 
-        <h2>Equipo del Proyecto</h2>
-        <p>
-            El proyecto fue desarrollado por el equipo de HexCode, compuesto por expertos en energías renovables, desarrolladores web y diseñadores gráficos. Nuestro compromiso es brindar información precisa y accesible para promover el uso de energías limpias en todo el mundo.
-        </p>
+                <h2>Objetivos</h2>
+                <ul>
+                    <li>Educar a los usuarios sobre la importancia de la energía solar.</li>
+                    <li>Proporcionar datos actualizados sobre la producción y consumo de energía solar.</li>
+                    <li>Ofrecer herramientas interactivas para facilitar la comprensión y aplicación de la energía solar.</li>
+                    <li>Fomentar el uso de energías limpias para contribuir a un futuro sostenible.</li>
+                </ul>
 
+                <h2>Equipo del Proyecto</h2>
+                <p>
+                    El proyecto fue desarrollado por el equipo de HexCode, compuesto por expertos en energías renovables, desarrolladores web y diseñadores gráficos. Nuestro compromiso es brindar información precisa y accesible para promover el uso de energías limpias en todo el mundo.
+                </p>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>
-            ENERGÍA SOLAR Proyecto educativo sobre energías limpias
-        </p>
-
-        <p>
-            © 2026 Autor: HexCode
-        </p>
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>
+                ENERGÍA SOLAR | Proyecto educativo sobre energías limpias
+            </p>
+            <p>
+                © 2026 Autor: HexCode
+            </p>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
